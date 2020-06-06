@@ -34,20 +34,6 @@ function createFeatures(earthquakeData) {
     return L.circleMarker( latlng, options );
 }
 
-  d3.json(platesJSON,function(data)
-{
-      var plates = L.geoJSON(data, {
-      style: function(feature){
-      return {
-        color:"orange"
-      }
-    }, 
-    onEachFeature: function (feature, layer){
-      layer.bindPopup("<h3> Plate " + feature.properties.PlateName + "</h3>")
-    }
-
-});
-}
 
 
 
@@ -135,7 +121,7 @@ circles.addTo(redCircle);
   // Create overlay object to hold our overlay layer
   var overlayMaps = {
     Earthquakes: earthquakes, 
-    Plates: plates,
+    //Plates: plates,
   };
 
   function style(feature) {
