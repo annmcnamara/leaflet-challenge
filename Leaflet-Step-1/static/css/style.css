@@ -11,15 +11,27 @@ html {
   height: 100%;
 }
 
-
+/* set up style for the legend */
 .legend {
   line-height: 18px;
   color: #555;
+  border: 1px solid black;
+  font-weight: bold;
+  text-align: left;
+  width: 70px;
+  height: 120px;
+  line-height: 18px;
+  background: white;
+  opacity: 1;
 }
 .legend i {
   width: 18px;
   height: 18px;
   float: left;
-  margin-right: 8px;
+  margin-right: 18px;
   opacity: 1;
+}
+
+.legend {
+  background-color: white;
 }
